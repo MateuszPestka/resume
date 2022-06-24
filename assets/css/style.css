@@ -14,6 +14,14 @@
     background-color: #f4f4f4;
 }
 
+.bg-color-work-history {
+    background-color: #9b59b6;
+}
+
+.bg-color-contact {
+    background-color: #fff;
+}
+
 .ui-menu-color-home {
     background-color: #e67e22;
 }
@@ -30,11 +38,7 @@
     background-color: #525252;
 }
 
-.bg-color-work-history {
-    background-color: #9b59b6;
-}
-
-/*--------------------------------------------Special paddings/margins/texts*/
+/* ----------------------------------------Special paddings/margins/text */
 
 h1,
 h2,
@@ -121,13 +125,13 @@ header {
     font-size: 0;
 }
 
-#nav {
-    margin: 0;
-}
-
 #nav li {
     font-size: 14px;
     padding: 0;
+}
+
+#nav {
+    margin: 0;
 }
 
 .menuitem {
@@ -163,22 +167,18 @@ header {
 
 /*--------------------------------------------Hover.css*/
 
-.hvr-sweep-to-bottom::before {
-    background-color: rgba(0, 0, 0, 0.2);
+.hvr-sweep-to-bottom:before {
+    background: rgba(0, 0, 0, 0.2);
     height: 120px;
 }
 
-/*--------------------------------------------Footer*/
+/* ----------------------------------------Footer */
 
 footer {
     background-color: #525252;
     color: #fafafa;
     min-height: 120px;
     margin: 0;
-}
-
-#footer-details {
-    padding: 20px;
 }
 
 .cv-pdf i {
@@ -205,8 +205,8 @@ footer {
     height: 32px;
     padding: 12px 0;
     border-radius: 50%;
-    line-height: 7px;
     font-size: 13px;
+    line-height: 7px;
     text-align: center;
     color: #fafafa;
     background: #8f8f8f;
@@ -220,7 +220,11 @@ footer {
     background: #e84610;
 }
 
-/*--------------------------------------------Three Reasons*/
+#footer-details {
+    padding: 20px;
+}
+
+/* ----------------------------------------Three Reasons */
 
 .three-reasons-icon {
     font-size: 26px;
@@ -231,7 +235,7 @@ footer {
     margin-bottom: 15px;
 }
 
-/*--------------------------------------------Personal Info*/
+/* ----------------------------------------Personal Info */
 
 .personal-info-item {
     margin-bottom: 20px;
@@ -248,7 +252,7 @@ footer {
 .personal-info-item .key p,
 .personal-info-item .value p {
     margin: 0;
-} 
+}
 
 .personal-info-item .key {
     width: 30%;
@@ -266,7 +270,7 @@ footer {
     width: 60%;
 }
 
-/*--------------------------------------------Skills*/
+/* ----------------------------------------Skills */
 
 .progress {
     position: relative;
@@ -283,7 +287,11 @@ footer {
     background-color: rgba(25, 25, 25, 0.2);
 }
 
-/*--------------------------------------------Work History*/
+.progress-section {
+    margin: 40px 20px;
+}
+
+/* ----------------------------------------Work History */
 
 .history-heading {
     color: #fafafa;
@@ -302,7 +310,7 @@ footer {
     margin: 0;
 }
 
-.timeline-item::before {
+.timeline-item:before {
     content: attr(data-dates);
     position: absolute;
     left: 2.5em;
@@ -315,18 +323,51 @@ footer {
     margin: 0;
 }
 
-.timeline-item::after {
+.timeline-item:after {
     width: 12px;
     height: 12px;
     display: block;
-    position: absolute;
     top: 2.4em;
+    position: absolute;
     left: -6px;
     border-radius: 12px;
-    content: "";
-    background-color: #fafafa;
+    content: '';
+    background: #fafafa;
 }
 
 .history-items {
     margin-bottom: 30px;
+}
+
+/* ----------------------------------------Contact Form */
+
+.contact-heading {
+    font-family: "Exo", sans-serif;
+    font-weight: 300;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.center-form {
+    padding-top: 10px;
+    margin: 0 auto;
+    max-width: 70%;
+}
+
+button[type="submit"] {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    color: #fafafa;
+    background-color: #e84610;
+}
+
+/* ----------------------------------------Media Queries */
+
+@media(min-width: 992px) {
+    .center-form {
+        padding-top: 30px;
+        min-height: 240px;
+        margin: 0 auto;
+        max-width: 50%;
+    }
 }
